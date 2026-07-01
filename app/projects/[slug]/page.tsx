@@ -88,7 +88,7 @@ export default async function ProjectDetailPage({
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-accent text-ink px-6 py-3.5 text-sm font-medium hover:opacity-90 transition-opacity inline-flex items-center justify-center gap-2"
+                  className="bg-accent text-white px-6 py-3.5 text-sm font-medium hover:opacity-90 transition-opacity inline-flex items-center justify-center gap-2 rounded-[1px]"
                 >
                   Live site &rarr;
                 </a>
@@ -98,7 +98,7 @@ export default async function ProjectDetailPage({
                   href={project.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border border-border text-paper px-6 py-3.5 text-sm font-medium hover:border-paper-dim transition-colors inline-flex items-center justify-center gap-2"
+                  className="border border-border text-paper px-6 py-3.5 text-sm font-medium hover:border-paper-dim transition-colors inline-flex items-center justify-center gap-2 rounded-[1px]"
                 >
                   View code &rarr;
                 </a>

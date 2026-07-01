@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="flex flex-wrap items-center gap-3 sm:gap-4 pt-2">
           <a
             href="mailto:mayanksaraswal@gmail.com"
-            className="border border-border bg-white/[0.02] text-paper px-5 py-3 text-sm font-medium hover:border-paper-dim hover:bg-white/[0.05] transition-all inline-flex items-center gap-2"
+            className="border border-border bg-white/[0.02] text-paper px-5 py-3 text-sm font-medium hover:border-paper-dim hover:bg-white/[0.05] transition-all inline-flex items-center gap-2 rounded-[1px]"
           >
             Email
           </a>
@@ -24,7 +24,7 @@ export default function Footer() {
             href="https://github.com/Mayank-saraswal"
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-border bg-white/[0.02] text-paper px-5 py-3 text-sm font-medium hover:border-paper-dim hover:bg-white/[0.05] transition-all inline-flex items-center gap-2"
+            className="border border-border bg-white/[0.02] text-paper px-5 py-3 text-sm font-medium hover:border-paper-dim hover:bg-white/[0.05] transition-all inline-flex items-center gap-2 rounded-[1px]"
           >
             GitHub
           </a>
@@ -32,7 +32,7 @@ export default function Footer() {
             href="https://linkedin.com/in/mayank-saini-728080308"
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-border bg-white/[0.02] text-paper px-5 py-3 text-sm font-medium hover:border-paper-dim hover:bg-white/[0.05] transition-all inline-flex items-center gap-2"
+            className="border border-border bg-white/[0.02] text-paper px-5 py-3 text-sm font-medium hover:border-paper-dim hover:bg-white/[0.05] transition-all inline-flex items-center gap-2 rounded-[1px]"
           >
             LinkedIn
           </a>
@@ -40,13 +40,13 @@ export default function Footer() {
             href="https://x.com/mayanksaraswal"
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-border bg-white/[0.02] text-paper px-5 py-3 text-sm font-medium hover:border-paper-dim hover:bg-white/[0.05] transition-all inline-flex items-center gap-2"
+            className="border border-border bg-white/[0.02] text-paper px-5 py-3 text-sm font-medium hover:border-paper-dim hover:bg-white/[0.05] transition-all inline-flex items-center gap-2 rounded-[1px]"
           >
             X
           </a>
           <Link
             href="/resume.pdf"
-            className="bg-accent text-ink px-5 py-3 text-sm font-medium hover:opacity-90 transition-opacity inline-flex items-center gap-2"
+            className="bg-accent text-white px-5 py-3 text-sm font-medium hover:opacity-90 transition-opacity inline-flex items-center gap-2 rounded-[1px]"
           >
             Download Resume &rarr;
           </Link>

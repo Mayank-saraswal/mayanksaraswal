@@ -32,13 +32,13 @@ export default function HomePage() {
           <div className="mt-12 flex flex-wrap items-center gap-4">
             <Link
               href="#work"
-              className="bg-accent text-ink px-6 py-3.5 text-sm font-medium hover:opacity-90 transition-opacity inline-flex items-center gap-2"
+              className="bg-accent text-white px-6 py-3.5 text-sm font-medium hover:opacity-90 transition-opacity inline-flex items-center gap-2 rounded-[1px]"
             >
               View Selected Work &darr;
             </Link>
             <Link
               href="#contact"
-              className="border border-border bg-white/[0.02] text-paper px-6 py-3.5 text-sm font-medium hover:border-paper-dim transition-colors"
+              className="border border-border bg-white/[0.02] text-paper px-6 py-3.5 text-sm font-medium hover:border-paper-dim transition-colors rounded-[1px]"
             >
               Get in touch
             </Link>
@@ -156,7 +156,7 @@ export default function HomePage() {
               <div>
                 <Link
                   href="#contact"
-                  className="bg-accent text-ink px-6 py-3.5 text-sm font-medium hover:opacity-90 transition-opacity inline-flex items-center justify-center"
+                  className="bg-accent text-white px-6 py-3.5 text-sm font-medium hover:opacity-90 transition-opacity inline-flex items-center justify-center rounded-[1px]"
                 >
                   Open to remote internships
                 </Link>
