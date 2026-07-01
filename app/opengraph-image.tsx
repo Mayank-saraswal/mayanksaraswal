@@ -44,7 +44,7 @@ export default function Image() {
             style={{
               fontFamily: "monospace",
               fontSize: "22px",
-              color: "#a1a1a1",
+              color: "#E0E0E0",
               letterSpacing: "0.1em",
               textTransform: "uppercase",
             }}
@@ -56,7 +56,7 @@ export default function Image() {
           style={{
             fontSize: "64px",
             fontWeight: 600,
-            color: "#fafafa",
+            color: "#ffffff",
             lineHeight: 1.1,
             marginBottom: "24px",
             letterSpacing: "-0.02em",
@@ -67,7 +67,7 @@ export default function Image() {
         <div
           style={{
             fontSize: "30px",
-            color: "#a1a1a1",
+            color: "#E0E0E0",
             lineHeight: 1.4,
             maxWidth: "960px",
           }}
