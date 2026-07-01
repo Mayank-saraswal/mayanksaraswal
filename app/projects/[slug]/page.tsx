@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { projects } from "@/lib/projects";
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
 export const dynamicParams = false;
 
@@ -190,6 +191,7 @@ export default async function ProjectDetailPage({
             </span>
           </Link>
         </div>
+        <Footer />
       </main>
     </div>
   );

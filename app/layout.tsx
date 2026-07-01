@@ -15,8 +15,10 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mayank Saraswal | Developer Portfolio",
-  description: "Personal developer portfolio of Mayank Saraswal.",
+  title: "Mayank Saini — Full-stack Developer",
+  description:
+    "B.Tech CSE student at Global Institute of Technology, Jaipur. I ship multi-tenant platforms with realtime sync, AI agents, and durable background jobs — solo, end to end.",
+  metadataBase: new URL("https://mayanksaraswal.com"),
 };
 
 export default function RootLayout({

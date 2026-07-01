@@ -2,6 +2,7 @@ import Nav from "@/components/Nav";
 import Link from "next/link";
 import { projects } from "@/lib/projects";
 import ProjectCard from "@/components/ProjectCard";
+import Footer from "@/components/Footer";
 
 export default function HomePage() {
   const featuredProjects = projects.filter((project) => project.featured);
@@ -220,13 +221,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Placeholder Contact section anchor */}
-        <section id="contact" className="pt-24 pb-16 border-t border-border">
-          <div className="font-mono text-sm text-accent tracking-widest uppercase mb-4">
-            Contact
-          </div>
-          <p className="text-paper-dim">Contact section placeholder.</p>
-        </section>
+        <Footer />
       </main>
     </div>
   );
