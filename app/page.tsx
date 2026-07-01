@@ -1,7 +1,11 @@
 import Nav from "@/components/Nav";
 import Link from "next/link";
+import { projects } from "@/lib/projects";
+import ProjectCard from "@/components/ProjectCard";
 
 export default function HomePage() {
+  const featuredProjects = projects.filter((project) => project.featured);
+
   return (
     <div className="min-h-screen flex flex-col bg-ink text-paper">
       <Nav />
@@ -46,12 +50,21 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Placeholder Work section anchor so 'View my work' scrolls smoothly */}
+        {/* Selected Work Section */}
         <section id="work" className="pt-24 pb-16 border-t border-border">
-          <div className="font-mono text-sm text-accent tracking-widest uppercase mb-4">
-            Selected Work
+          <div className="space-y-2 mb-10">
+            <h2 className="font-mono text-xs sm:text-sm text-paper tracking-widest uppercase font-medium">
+              SELECTED WORK
+            </h2>
+            <p className="text-paper-dim text-base sm:text-lg font-normal leading-relaxed">
+              Architecting production-grade multi-tenant AI platforms and distributed systems from scratch.
+            </p>
           </div>
-          <p className="text-paper-dim">Projects will be listed here.</p>
+          <div className="flex flex-col space-y-6">
+            {featuredProjects.map((project) => (
+              <ProjectCard key={project.slug} project={project} />
+            ))}
+          </div>
         </section>
 
         {/* Placeholder About section anchor */}
