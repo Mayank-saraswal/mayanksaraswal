@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  --color-ink: #1a1a1a;
+  --color-paper: #fafafa;
+  --color-paper-dim: #a1a1a1;
+  --color-accent: #f35815;
+  --color-border: #2e2e2e;
+}
+
+@theme inline {
+  --color-ink: var(--color-ink);
+  --color-paper: var(--color-paper);
+  --color-paper-dim: var(--color-paper-dim);
+  --color-accent: var(--color-accent);
+  --color-border: var(--color-border);
+  --font-sans: var(--font-sans), sans-serif;
+  --font-mono: var(--font-mono), monospace;
+}
+
+body {
+  background-color: var(--color-ink);
+  color: var(--color-paper);
+  font-family: var(--font-sans), sans-serif;
+  font-weight: 400;
+}
+
+/* STRICT RULE: Never use font-weight above 600 (SemiBold) anywhere on the site */
+*, *::before, *::after {
+  box-shadow: none !important;
+}
