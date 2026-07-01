@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Project } from "@/lib/projects";
+import StackPill from "@/components/StackPill";
 
 interface ProjectCardProps {
   project: Project;
@@ -24,12 +25,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         {project.stack && project.stack.length > 0 && (
           <div className="flex flex-wrap items-center gap-2 pt-2">
             {project.stack.map((tech) => (
-              <span
-                key={tech}
-                className="font-mono text-[12px] text-paper-dim bg-white/[0.05] px-2.5 py-1 rounded-sm border border-border/50"
-              >
-                {tech}
-              </span>
+              <StackPill key={tech} tech={tech} />
             ))}
           </div>
         )}

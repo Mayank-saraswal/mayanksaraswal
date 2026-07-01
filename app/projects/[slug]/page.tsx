@@ -4,6 +4,7 @@ import { Metadata } from "next";
 import { projects } from "@/lib/projects";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import StackPill from "@/components/StackPill";
 
 export const dynamicParams = false;
 
@@ -153,12 +154,7 @@ export default async function ProjectDetailPage({
               </h2>
               <div className="flex flex-wrap items-center gap-2 pt-1">
                 {project.stack.map((tech) => (
-                  <span
-                    key={tech}
-                    className="font-mono text-[12px] text-paper-dim bg-white/[0.05] px-2.5 py-1 rounded-sm border border-border/50"
-                  >
-                    {tech}
-                  </span>
+                  <StackPill key={tech} tech={tech} />
                 ))}
               </div>
             </section>

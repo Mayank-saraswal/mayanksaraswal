@@ -4,6 +4,7 @@ import { projects } from "@/lib/projects";
 import ProjectCard from "@/components/ProjectCard";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
+import StackPill from "@/components/StackPill";
 
 export default function HomePage() {
   const featuredProjects = projects.filter((project) => project.featured);
@@ -104,12 +105,7 @@ export default function HomePage() {
                   {project.stack && project.stack.length > 0 && (
                     <div className="flex flex-wrap items-center gap-2 pt-2">
                       {project.stack.map((tech) => (
-                        <span
-                          key={tech}
-                          className="font-mono text-[12px] text-paper-dim bg-white/[0.05] px-2.5 py-1 rounded-sm border border-border/50"
-                        >
-                          {tech}
-                        </span>
+                        <StackPill key={tech} tech={tech} />
                       ))}
                     </div>
                   )}
@@ -181,44 +177,49 @@ export default function HomePage() {
                 <h3 className="font-mono text-xs text-paper uppercase tracking-wider font-medium">
                   Frontend
                 </h3>
-                <ul className="space-y-2.5 font-mono text-sm text-paper-dim font-normal">
-                  <li>Next.js</li>
-                  <li>TypeScript</li>
-                  <li>Tailwind CSS</li>
-                  <li>React</li>
-                </ul>
+                <div className="flex flex-wrap gap-2">
+                  <StackPill tech="Next.js 15" />
+                  <StackPill tech="TypeScript" />
+                  <StackPill tech="Tailwind CSS" />
+                  <StackPill tech="React" />
+                  <StackPill tech="React Flow" />
+                </div>
               </div>
               <div className="space-y-4">
                 <h3 className="font-mono text-xs text-paper uppercase tracking-wider font-medium">
-                  Backend
+                  Backend & DB
                 </h3>
-                <ul className="space-y-2.5 font-mono text-sm text-paper-dim font-normal">
-                  <li>tRPC</li>
-                  <li>Prisma</li>
-                  <li>PostgreSQL</li>
-                  <li>Node.js</li>
-                </ul>
+                <div className="flex flex-wrap gap-2">
+                  <StackPill tech="Node.js" />
+                  <StackPill tech="tRPC" />
+                  <StackPill tech="Prisma" />
+                  <StackPill tech="PostgreSQL" />
+                  <StackPill tech="Redis" />
+                </div>
               </div>
               <div className="space-y-4">
                 <h3 className="font-mono text-xs text-paper uppercase tracking-wider font-medium">
-                  Infra/AI
+                  AI & Realtime
                 </h3>
-                <ul className="space-y-2.5 font-mono text-sm text-paper-dim font-normal">
-                  <li>Inngest</li>
-                  <li>Supabase</li>
-                  <li>Vercel AI SDK</li>
-                  <li>OpenRouter</li>
-                </ul>
+                <div className="flex flex-wrap gap-2">
+                  <StackPill tech="Inngest" />
+                  <StackPill tech="Supabase" />
+                  <StackPill tech="Convex" />
+                  <StackPill tech="OpenAI" />
+                  <StackPill tech="Anthropic" />
+                </div>
               </div>
               <div className="space-y-4">
                 <h3 className="font-mono text-xs text-paper uppercase tracking-wider font-medium">
-                  Tools
+                  Cloud & Infra
                 </h3>
-                <ul className="space-y-2.5 font-mono text-sm text-paper-dim font-normal">
-                  <li>Git</li>
-                  <li>Vercel</li>
-                  <li>Docker</li>
-                </ul>
+                <div className="flex flex-wrap gap-2">
+                  <StackPill tech="Vercel" />
+                  <StackPill tech="Docker" />
+                  <StackPill tech="GitHub" />
+                  <StackPill tech="Azure" />
+                  <StackPill tech="Python" />
+                </div>
               </div>
             </div>
           </section>
