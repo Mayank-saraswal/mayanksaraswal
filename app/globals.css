@@ -14,14 +14,14 @@
   --color-paper-dim: var(--color-paper-dim);
   --color-accent: var(--color-accent);
   --color-border: var(--color-border);
-  --font-sans: var(--font-sans), sans-serif;
-  --font-mono: var(--font-mono), monospace;
+  --font-sans: Consolas, "Courier New", var(--font-sans), monospace;
+  --font-mono: Consolas, "Courier New", var(--font-mono), monospace;
 }
 
 body {
   background-color: var(--color-ink);
   color: var(--color-paper);
-  font-family: var(--font-sans), sans-serif;
+  font-family: Consolas, "Courier New", var(--font-sans), monospace;
   font-weight: 400;
 }
 
