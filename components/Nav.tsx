@@ -107,7 +107,7 @@ export default function Nav() {
           </a>
           <span className="text-border select-none">|</span>
           <a
-            href="/resume.pdf"
+            href="/Mayank_Saini_Resume.docx"
             target="_blank"
             rel="noopener noreferrer"
             className="text-paper-dim hover:text-paper transition-colors"
@@ -196,7 +196,7 @@ export default function Nav() {
                 Get in touch
               </Link>
               <a
-                href="/resume.pdf"
+                href="/Mayank_Saini_Resume.docx"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
