@@ -1,19 +1,75 @@
+import Nav from "@/components/Nav";
+import Link from "next/link";
+
 export default function HomePage() {
   return (
-    <main className="min-h-screen max-w-4xl mx-auto px-6 py-24 md:py-32 flex flex-col justify-center">
-      <div className="space-y-6">
-        <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-paper">
-          Mayank Saraswal
-        </h1>
-        <p className="text-lg md:text-xl text-paper-dim max-w-2xl font-normal leading-relaxed">
-          Developer portfolio. Building scalable web applications with clean architecture and modern design systems.
-        </p>
-        <div className="pt-8 border-t border-border flex items-center gap-4">
-          <span className="text-sm font-mono text-accent uppercase tracking-wider font-medium">
-            Portfolio Scaffolded
-          </span>
-        </div>
-      </div>
-    </main>
+    <div className="min-h-screen flex flex-col bg-ink text-paper">
+      <Nav />
+      <main className="flex-1 flex flex-col justify-center max-w-6xl w-full mx-auto px-6 py-20 md:py-32">
+        <section className="min-h-[75vh] flex flex-col justify-center animate-fade-up">
+          <div className="space-y-8 max-w-4xl">
+            {/* Eyebrow */}
+            <div className="inline-flex items-center gap-2 font-mono text-xs sm:text-sm text-paper-dim uppercase tracking-wider">
+              <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+              <span>Open to remote internships</span>
+            </div>
+
+            {/* Headline */}
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-paper leading-[1.1]">
+              Full-stack developer building production AI SaaS.
+            </h1>
+
+            {/* Subheadline */}
+            <p className="text-lg sm:text-xl text-paper-dim max-w-[600px] font-normal leading-relaxed">
+              B.Tech CSE student at Global Institute of Technology, Jaipur. I ship
+              multi-tenant platforms with realtime sync, AI agents, and durable
+              background jobs — solo, end to end.
+            </p>
+
+            {/* CTAs */}
+            <div className="pt-4 flex flex-wrap items-center gap-4">
+              <Link
+                href="#work"
+                className="bg-accent text-ink px-6 py-3.5 text-sm font-medium hover:opacity-90 transition-opacity inline-flex items-center justify-center"
+              >
+                View my work
+              </Link>
+              <a
+                href="https://github.com/Mayank-saraswal"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border border-border text-paper px-6 py-3.5 text-sm font-medium hover:border-paper-dim transition-colors inline-flex items-center justify-center"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Placeholder Work section anchor so 'View my work' scrolls smoothly */}
+        <section id="work" className="pt-24 pb-16 border-t border-border">
+          <div className="font-mono text-sm text-accent tracking-widest uppercase mb-4">
+            Selected Work
+          </div>
+          <p className="text-paper-dim">Projects will be listed here.</p>
+        </section>
+
+        {/* Placeholder About section anchor */}
+        <section id="about" className="pt-24 pb-16 border-t border-border">
+          <div className="font-mono text-sm text-accent tracking-widest uppercase mb-4">
+            About
+          </div>
+          <p className="text-paper-dim">About section placeholder.</p>
+        </section>
+
+        {/* Placeholder Contact section anchor */}
+        <section id="contact" className="pt-24 pb-16 border-t border-border">
+          <div className="font-mono text-sm text-accent tracking-widest uppercase mb-4">
+            Contact
+          </div>
+          <p className="text-paper-dim">Contact section placeholder.</p>
+        </section>
+      </main>
+    </div>
   );
 }
