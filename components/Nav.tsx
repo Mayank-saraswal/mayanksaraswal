@@ -106,14 +106,12 @@ export default function Nav() {
             GitHub
           </a>
           <span className="text-border select-none">|</span>
-          <a
-            href="/Mayank_Saini_Resume.docx"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/resume"
             className="text-paper-dim hover:text-paper transition-colors"
           >
             Resume
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Hamburger Button */}
@@ -195,15 +193,13 @@ export default function Nav() {
               >
                 Get in touch
               </Link>
-              <a
-                href="/Mayank_Saini_Resume.docx"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/resume"
                 onClick={() => setMobileMenuOpen(false)}
                 className="border border-border text-paper px-4 py-2 text-sm font-medium hover:border-paper-dim transition-colors rounded-[1px]"
               >
                 Resume
-              </a>
+              </Link>
             </div>
           </div>
         </div>

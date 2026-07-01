@@ -44,14 +44,12 @@ export default function Footer() {
           >
             X
           </a>
-          <a
-            href="/Mayank_Saini_Resume.docx"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/resume"
             className="bg-accent text-white px-5 py-3 text-sm font-medium hover:opacity-90 transition-opacity inline-flex items-center gap-2 rounded-[1px]"
           >
-            Download Resume &rarr;
-          </a>
+            View Resume &rarr;
+          </Link>
         </div>
 
         <div className="pt-12 border-t border-border/50 flex items-center justify-between">
