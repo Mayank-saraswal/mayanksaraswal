@@ -19,7 +19,7 @@ export default function Image() {
           flexDirection: "column",
           alignItems: "flex-start",
           justifyContent: "center",
-          backgroundColor: "#1a1a1a",
+          backgroundColor: "#111111",
           padding: "80px",
           border: "20px solid #2e2e2e",
         }}
